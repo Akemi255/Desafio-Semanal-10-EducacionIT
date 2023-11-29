@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+    position: relative;
+  }
+  
+  #particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgb(10, 10, 50) 0%, rgb(60, 10, 60) 100%);
+  }
+  
+  .calculator {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(248, 249, 250, 0.8); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    position: relative;
+    z-index: 1;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgba(236, 236, 236, 0.9);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgba(209, 209, 209, 0.9);
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(183, 183, 183, 0.9);
+  }
+  
+  button:active {
+    background-color: rgba(162, 162, 162, 0.9);
+  }
+  
